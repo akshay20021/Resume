@@ -1,0 +1,103 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: inline;
+  }
+  .navbar{
+    
+    font-size: 25px;
+    color: rgb(18, 14, 14);
+    padding: 10px 10px;
+    background-color: rgb(240, 56, 139);
+    align-items: center;
+  }
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+    list-style: none;
+}
+nav ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width:0;
+    height: 3px;
+    background: #83b7e8;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+  
+  
+  body{
+    background-image: url('back.webp');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .container{
+    margin: 5px 10px;
+    align-self: center;
+   text-align: center;
+  }
+  #click{
+    background-color:rgb(21, 223, 192);
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 20px 20px;
+  }
+  .text{
+    text-align: center;
+    color: rgb(126, 111, 180);
+    font-weight: bold;
+  }
+  #main{
+    font-size: 50px;
+    
+  }
+  .logo{
+   width: 80px;
+   border-radius: 10px;
+  }
+  .logo1{
+    text-shadow: 0cap;
+    width: 200px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: -2s;
+  }
+  @keyframes example {
+    from {top: 800px;}
+    to {top: 0px; }
+  }
+  .col-sm-6{
+    color: white;
+    font-size: 40px;
+    background-color: aqua;
+    background-size: 10px;
+    padding-left: 10%;
+    break-inside: auto;
+    
+  }
